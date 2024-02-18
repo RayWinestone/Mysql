@@ -1,0 +1,11 @@
+Every time I run the command mysqld (see below) I get the error as shown. Each time I've run it I created a new data directory and changed the permissions to o+rwx
+
+➜  bin git:(stable) /opt/homebrew/Cellar/mysql/8.3.0/bin/mysqld --initialize-insecure --user=raywinestone --basedir=/opt/homebrew/Cellar/mysql/8.3.0 --datadir=/opt/homebrew/var/mysql/data4 --tmpdir=/tmp
+2024-02-18T10:36:06.727033Z 0 [System] [MY-015017] [Server] MySQL Server Initialization - start.
+2024-02-18T10:36:06.728782Z 0 [System] [MY-013169] [Server] /opt/homebrew/Cellar/mysql/8.3.0/bin/mysqld (mysqld 8.3.0) initializing of server in progress as process 5831
+2024-02-18T10:36:06.730306Z 0 [ERROR] [MY-010457] [Server] --initialize specified but the data directory has files in it. Aborting.
+2024-02-18T10:36:06.730310Z 0 [ERROR] [MY-013236] [Server] The designated data directory /opt/homebrew/var/mysql/data4/ is unusable. You can remove all files that the server added to it.
+2024-02-18T10:36:06.730350Z 0 [ERROR] [MY-010119] [Server] Aborting
+2024-02-18T10:36:06.730733Z 0 [System] [MY-015018] [Server] MySQL Server Initialization - end.
+
+Can anyone help?
